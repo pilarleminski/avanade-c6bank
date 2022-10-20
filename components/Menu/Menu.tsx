@@ -17,6 +17,16 @@ const MenuContainer = styled.div`
     flex-direction: column;
     padding-left: 30px;
     margin-bottom: 30px;
+    height: 150px;
+    overflow-y: auto;
+    &::-webkit-scrollbar-thumb {
+      background-color: #242424;
+      outline: 1px solid #777777;
+      border-radius: 2px;
+    }
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
     li {
       font-weight: 400;
       font-size: 1.2rem;
@@ -49,7 +59,6 @@ export default function Menu() {
           </Link>
         </li>
 
-        <li>Início</li>
         <li>Extrato</li>
         <li>Transferências</li>
         <li>Pagamentos</li>

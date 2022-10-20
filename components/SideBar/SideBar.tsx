@@ -7,7 +7,10 @@ import Menu from '../Menu';
 const SideBarContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 360px;
+  width: 450px;
+  height: 100vh;
+  background-color: #242424;
+  position: fixed;
 `
 
 export default function SideBar() {
