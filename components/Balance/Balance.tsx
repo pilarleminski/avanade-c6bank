@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
-import ShowSVG from '../svg/showSVG';
-import HideSVG from '../svg/hideSVG';
+import ShowSVG from '../svg/ShowSVG';
+import HideSVG from '../svg/HideSVG';
 
 
 const BalanceContainer = styled.div`
@@ -23,6 +23,9 @@ const BalanceContainer = styled.div`
     outline: 0;
     background: transparent;
     color: #f8f8f8;
+    position: absolute;
+    right: 30px;
+    margin-top: 5px;
   }
 
 `
@@ -50,3 +53,4 @@ export default function Balance(props: BalanceProps) {
     </BalanceContainer>
   )
 }
+
